@@ -364,9 +364,7 @@ footer .column > a:hover{
     footer{
         grid-template-columns: 1fr 200px;
     }
-    .btn{
-        justify-content: end;
-    }
+    
 
 }
 
@@ -379,8 +377,5 @@ footer .column > a:hover{
     }
     footer{
         grid-template-columns: 1fr 150px;
-    }
-    .btn{
-        justify-content: end;
     }
 }
