@@ -65,6 +65,7 @@ nav{
 
 .btn{
     padding: 5.8px 5.8px;
+    margin: 5px 5px;
     font-size:13px;
     font-family: "ledger", sans-serif;
     color: #000;
@@ -114,7 +115,7 @@ header .content h2{
     color: #fff;
     font-size: 25.81px;
     font-weight: 700;
-    line-height: 20px;
+
 }
 header .content span{
     color: #00FFFF;
@@ -363,6 +364,9 @@ footer .column > a:hover{
     footer{
         grid-template-columns: 1fr 200px;
     }
+    .btn{
+        justify-content: end;
+    }
 
 }
 
@@ -375,5 +379,8 @@ footer .column > a:hover{
     }
     footer{
         grid-template-columns: 1fr 150px;
+    }
+    .btn{
+        justify-content: end;
     }
 }
