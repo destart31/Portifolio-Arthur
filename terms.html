@@ -1,12 +1,32 @@
-<?php 
-$pageTitle = "Termos e Condições - Portfolio Arthur";
-$isSimpleHeader = true;
-include 'partials/header.php'; 
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagens/profile-pic.png" type="image/png">
+    <title>Termos e Condições - Portfolio Arthur</title>
+</head>
+
+<body id="home">
+    <div class="background-blur"></div>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.php">
+                <img src="imagens/profile-pic.png" alt="Logo do portfolio">
+            </a>
+        </div>
+
+                    <ul class="nav-links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="#about">Mais</a></li>
+            </ul>
+            </nav>
 <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
     <h1>Termos e Condições</h1>
-    <p>Esta política é efetiva a partir de <?php echo date("d \d\e F \d\e Y"); ?>.</p>
+    <p>Esta política é efetiva a partir de 12 d October d 2025.</p>
     <br>
 
     <h2>Política de Privacidade</h2>
@@ -47,4 +67,40 @@ include 'partials/header.php';
     <p>Esperamos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site.</p>
 </div>
 
-<?php include 'partials/footer.php'; ?>
+    <footer class="container" id="about">
+        <div class="column">
+            <div class="logo">
+                <img src="imagens/profile-pic.png" alt="Logo do portfolio">
+            </div>
+
+            <p>
+                Redes sociais:
+            </p>
+
+            <div class="socials">
+                <a href="https://github.com/destart31" target="_blank" rel="noopener noreferrer"><i class="ri-github-line"></i></a>
+                <a href="https://instagram.com/arthurgabriel31" target="_blank" rel="noopener noreferrer"><i
+                        class="ri-instagram-line"></i></a>
+                <a href="www.linkedin.com/in/arthurgabriel31" target="_blank" rel="noopener noreferrer"><i
+                        class="ri-linkedin-line"></i></a>
+            </div>
+        </div>
+
+        <div class="column">
+            <h4>Contatos</h4>
+            <a href="mailto:art31082000@gmail.com">Contato Email</a>
+            <a href="https://wa.me/5512992238972">Contato telefone</a>
+            <a href="terms.php">Termos e Condições</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2025 Arthur Gabriel. All Rights Reserved.
+    </div>
+
+    <a href="#home" class="back-to-top-btn" title="Voltar ao topo"><i class="ri-arrow-up-s-line"></i></a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

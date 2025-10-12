@@ -1,8 +1,39 @@
-<?php 
-$pageTitle = "Portfolio Arthur";
-include 'partials/header.php'; 
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagens/profile-pic.png" type="image/png">
+    <title>Portfolio Arthur</title>
+</head>
+
+<body id="home">
+    <div class="background-blur"></div>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.php">
+                <img src="imagens/profile-pic.png" alt="Logo do portfolio">
+            </a>
+        </div>
+
+                    <ul class="nav-links">
+                <li class="link"><a href="#home">Home</a></li>
+                <li class="link"><a href="#features">Recursos</a></li>
+                <li class="link"><a href="#experience">Experiências</a></li>
+                <li class="link"><a href="#about">Mais</a></li>
+            </ul>
+            <div class="buttons">
+                <a href="https://drive.google.com/file/d/1njEyLjUHcyRWe37ZsqAgtpF21RKtkDY4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <button class="btn">Baixar meu currículo</button>
+                </a>
+                <a href="https://wa.me/5512992238972" target="_blank" rel="noopener noreferrer">
+                    <button class="btn">Cel. (12) 99223-8972</button>
+                </a>
+            </div>
+            </nav>
     <header class="container">
         <div class="content">
             <h4>Olá, <span>Bem-vindo.</span></h4>
@@ -133,4 +164,40 @@ include 'partials/header.php';
         </div>
     </section>
 
-<?php include 'partials/footer.php'; ?>
+    <footer class="container" id="about">
+        <div class="column">
+            <div class="logo">
+                <img src="imagens/profile-pic.png" alt="Logo do portfolio">
+            </div>
+
+            <p>
+                Redes sociais:
+            </p>
+
+            <div class="socials">
+                <a href="https://github.com/destart31" target="_blank" rel="noopener noreferrer"><i class="ri-github-line"></i></a>
+                <a href="https://instagram.com/arthurgabriel31" target="_blank" rel="noopener noreferrer"><i
+                        class="ri-instagram-line"></i></a>
+                <a href="www.linkedin.com/in/arthurgabriel31" target="_blank" rel="noopener noreferrer"><i
+                        class="ri-linkedin-line"></i></a>
+            </div>
+        </div>
+
+        <div class="column">
+            <h4>Contatos</h4>
+            <a href="mailto:art31082000@gmail.com">Contato Email</a>
+            <a href="https://wa.me/5512992238972">Contato telefone</a>
+            <a href="terms.html">Termos e Condições</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2025 Arthur Gabriel. All Rights Reserved.
+    </div>
+
+    <a href="#home" class="back-to-top-btn" title="Voltar ao topo"><i class="ri-arrow-up-s-line"></i></a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
