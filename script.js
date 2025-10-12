@@ -1,28 +1,27 @@
-function scrollToElement(elementSelector, instance = 0) {
-    // Select all elements that match the given selector
+// O código de rolagem foi removido.
+// A rolagem suave agora é controlada pelo CSS em styles.css com a regra:
+// html { scroll-behavior: smooth; }
 
-    const elements = document.querySelectorAll(elementSelector);
+// --- Lógica da Navegação Fixa (Sticky Nav) ---
+const nav = document.querySelector("nav");
 
-    //Check if there are elements that matching the selector and if the requested instance exists
-    if(elements.length > instance){
-        //scroll to the specified instance of the element
-        elements[instance].scrollIntoView({ behavior: "smooth" });
+window.addEventListener("scroll", () => {
+    // Adiciona a classe .nav-fixed quando o scroll passar de 10px
+    if (window.scrollY > 10) {
+        nav.classList.add("nav-fixed");
+    } else {
+        nav.classList.remove("nav-fixed");
     }
-}
-
-const link1 = document.getElementById('link1');
-const link2 = document.getElementById('link2');
-const link3 = document.getElementById('link3');
-
-link1.addEventListener('click', () => {
-    scrollToElement('.header');
 });
 
-link2.addEventListener('click', () => {
-    // Scroll to the second element with "header" class
-    scrollToElement('.header', 1);
-});
+// --- Lógica do Botão Voltar ao Topo ---
+const backToTopButton = document.querySelector(".back-to-top-btn");
 
-link3.addEventListener('click', () => {
-    scrollToElement('.column');
+window.addEventListener("scroll", () => {
+    // Mostra o botão depois que o usuário rolar 300px para baixo
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add("show");
+    } else {
+        backToTopButton.classList.remove("show");
+    }
 });
